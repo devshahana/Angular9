@@ -13,6 +13,7 @@ import { UserServiceService } from './Shared/user-service.service';
 import { CategoriesComponent } from './Category/categories/categories.component';
 import { SpecComponent } from './Products/spec/spec.component';
 import { ProductComponent } from './Products/product/product.component';
+import { OrderComponent } from './Orders/order/order.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ProductComponent } from './Products/product/product.component';
     HomeComponent,
     CategoriesComponent,
     SpecComponent,
-    ProductComponent
+    ProductComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,
