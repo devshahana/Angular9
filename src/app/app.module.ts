@@ -10,6 +10,9 @@ import { LoginComponent } from './Users/login/login.component';
 import { HomeComponent } from './home/home.component';
 import { AuthInterceptor } from './auth.interceptor';
 import { UserServiceService } from './Shared/user-service.service';
+import { CategoriesComponent } from './Category/categories/categories.component';
+import { SpecComponent } from './Products/spec/spec.component';
+import { ProductComponent } from './Products/product/product.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { UserServiceService } from './Shared/user-service.service';
     EmployeesComponent,
     UserregistrationComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    CategoriesComponent,
+    SpecComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
