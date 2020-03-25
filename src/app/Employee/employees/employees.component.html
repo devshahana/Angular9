@@ -29,7 +29,7 @@
         <tr *ngFor="let e of employeeList">
             <td>{{e.caption}}</td>
             <td>
-                <img src="http://localhost:50506/{{e.image}}" />
+                <img src="http://localhost:50506/{{e.image}}" alt="{{e.caption}}" style="height:150" width="150" class="img" />
             </td>
         </tr>
     </table>

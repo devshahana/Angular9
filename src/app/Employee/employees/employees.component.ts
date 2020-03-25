@@ -15,12 +15,15 @@ public progress: number;
   constructor(private htpp:HttpClient) { }
 
   ngOnInit(): void {
+  this.Load();
+  }
+  Load(){
     this.htpp.get("http://localhost:50506/api/Employees")
-            .subscribe(data=>{
+    .subscribe(data=>{
 this.employeeList=data;
 console.log(data)
 
-            })
+    })
   }
 HandleInputFIle(data:FileList){
   console.log(data[0])
@@ -49,7 +52,10 @@ savedata(caption){
     this.progress = Math.round(100 * event.loaded / event.total);
   else if (event.type === HttpEventType.Response)
     this.message = event.body.toString();
-
+    this.Load();
+    caption.value=null;
+    this.imageUrl="assets/Image/Capture.JPG";
+    
    })
     // this.htpp.post("http://localhost:50506/api/Employees",formData)
     //           .subscribe(data=>{
